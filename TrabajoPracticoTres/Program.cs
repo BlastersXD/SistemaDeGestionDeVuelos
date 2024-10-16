@@ -11,7 +11,7 @@ class Program
         while (!salir)
         {
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            Console.WriteLine("\nBienvenido a CODESKY");
+            Console.WriteLine("\n             Bienvenido a CODESKY");
             Console.ResetColor();
 
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -24,7 +24,7 @@ class Program
             Console.WriteLine("| 6. Buscar un asiento.                        |");
             Console.WriteLine("| 7. Salir.                                    |");
             Console.WriteLine(" ----------------------------------------------\n");
-            //Console.ResetColor(); (opcional...)
+            Console.ResetColor(); //(opcional...)
 
             Console.Write("Seleccione una opción: ");
             if (int.TryParse(Console.ReadLine(), out int opcion))
@@ -202,6 +202,7 @@ class Program
         int numero;
         bool valido = false;
 
+        //Se usa para la validacion de un numero que no sea string.
         do
         {
             Console.Write(mensaje);
