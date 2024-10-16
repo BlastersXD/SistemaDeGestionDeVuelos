@@ -24,7 +24,7 @@ class Program
             Console.WriteLine("| 6. Buscar un asiento.                        |");
             Console.WriteLine("| 7. Salir.                                    |");
             Console.WriteLine(" ----------------------------------------------\n");
-            //Console.ResetColor(); (opcional)
+            //Console.ResetColor(); (opcional...)
 
             Console.Write("Seleccione una opción: ");
             if (int.TryParse(Console.ReadLine(), out int opcion))
